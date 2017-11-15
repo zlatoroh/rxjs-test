@@ -3,13 +3,12 @@ import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs';
 
 @Injectable()
-export class KomuniService {
+export class KomunidveService {
 	private subject = new Subject<any>();
-  	constructor() { }
-
+  constructor() { }
 	sendMessage(message: string){
-		console.log('SERVIS');
-		this.subject.next('Servis v root-u');
+		console.log('SERVIS2');
+		this.subject.next('Servis iz modula');
 	}
 
 	getMessage(): Observable<any> {

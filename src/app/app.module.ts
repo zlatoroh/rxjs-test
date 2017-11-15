@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ViewComponent } from './view/view.component';
 
 import {DrugiModule} from './drugi/drugi.module'; 
+import {ServisModule} from './servis/servis.module'; 
 
 
 
@@ -17,11 +18,13 @@ import {DrugiModule} from './drugi/drugi.module';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    DrugiModule
+    DrugiModule,
+    ServisModule
 
   ],
   exports: [
-  	DrugiModule
+  	DrugiModule,
+  	ServisModule
   ],
   providers: [],
   bootstrap: [AppComponent]
